@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <title>Explore / Twitter</title>
+    <meta
+      name="description"
+      content="This is a FrontEnd Part of Twitter made using JS,HTML5 & CSS"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <!-- Left Sidebar -->
+    <div class="left-sidebar">
+      <div class="links-flex">
+        <div class="white-logo">
+          <a href="#">
+            <img
+              src="assets/twitter-white.png"
+              class="twitter-white-logo"
+              alt="Twitter White Logo"
+            />
+          </a>
+        </div>
+        <div class="link-flex">
+          <img src="assets/hashtag.svg" class="link-icon" />
+          <p class="link-text">Explore</p>
+        </div>
+        <div class="link-flex">
+          <img src="assets/setting.svg" class="link-icon" />
+          <p class="link-text">Settings</p>
+        </div>
+      </div>
+    </div>
+    <!-- Main Twitter Feed  -->
+    <div class="middle-section">
+      <div class="top-nav">
+        <div class="search-flex">
+          <div class="search-bar">
+            <img src="assets/search.svg" class="search-icon" />
+            <input type="text" placeholder="Search Twitter" />
+          </div>
+          <img src="assets/setting.svg" class="setting-icon" />
+        </div>
+
+        <div class="tab">
+          <button class="tablinks" id="defaultOpen" onclick="switchTabs(event, 'ForYou')">
+            For You
+          </button>
+          <button class="tablinks" onclick="switchTabs(event, 'Trending')">
+            Trending
+          </button>
+          <button class="tablinks" onclick="switchTabs(event, 'News')">
+            News
+          </button>
+          <button class="tablinks" onclick="switchTabs(event, 'Sports')">
+            Sports
+          </button>
+          <button class="tablinks" onclick="switchTabs(event, 'Entertainment')">
+            Entertainment
+          </button>
+        </div>
+      </div>
+
+      <div id="ForYou" class="tabcontent">
+        <div class="tabs-main-img">
+          <h3>Entertainment · LIVE</h3>
+          <p>The latest from Season 16 of Bigg Boss</p>
+        </div>
+        <div class="trending-box">
+          <p class="trending-heading">Trending In India</p>
+          <p class="trending-text">#earthquake</p>
+          <p class="trending-heading">
+            Trending with <a href="#" class="twitter-links">#BREAKING_NEWS</a>
+          </p>
+        </div>
+
+        <div
+          class="tabs-main-img"
+          style="
+            background-image: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0.7)
+              ),
+              url('https://pbs.twimg.com/semantic_core_img/1255575536824233984/CiLy4der?format=jpg&name=900x900');">
+          <h3>Pollution</h3>
+          <p>Pollution in Delhi is rising.</p>
+        </div>
+        <div class="trending-box">
+          <p class="trending-heading">Pollution Trends</p>
+          <p class="trending-text">#pollution</p>
+          <p class="trending-heading">1.418k Tweets</p>
+        </div>
+      </div>
+
+      <div id="Trending" class="tabcontent">
+        <h3 style="margin: 1rem">Trends In India</h3>
+        <div class="trending-box">
+          <p class="trending-heading">1 · Entertainment · Trending</p>
+          <p class="trending-text">#SuperStarKrishna</p>
+          <p class="trending-heading">239K Tweets</p>
+        </div>
+        <div class="trending-box">
+          <p class="trending-heading">2 · Trending</p>
+          <p class="trending-text">#Shraddha</p>
+          <p class="trending-heading">79.3K Tweets</p>
+        </div>
+        <div class="trending-box">
+          <p class="trending-heading">3 · Trending</p>
+          <p class="trending-text">Aftab</p>
+          <p class="trending-heading">144K Tweets</p>
+        </div>
+        <div class="trending-box">
+          <p class="trending-heading">4 · Trending</p>
+          <p class="trending-text">#GRAMMYs🎷</p>
+          <p class="trending-heading">99.99k Tweets</p>
+        </div>
+        <div class="trending-box">
+          <p class="trending-heading">5 · Trending</p>
+          <p class="trending-text">#earthquake</p>
+          <p class="trending-heading">99.99k Tweets</p>
+        </div>
+        <div class="trending-box">
+          <p class="trending-heading">6 · Trending</p>
+          <p class="trending-text">#earthquake</p>
+          <p class="trending-heading">99.99k Tweets</p>
+        </div>
+        <div class="trending-box">
+          <p class="trending-heading">7 · Trending</p>
+          <p class="trending-text">#earthquake</p>
+          <p class="trending-heading">99.99k Tweets</p>
+        </div>
+        <div class="trending-box">
+          <p class="trending-heading">8 · Trending</p>
+          <p class="trending-text">#earthquake</p>
+          <p class="trending-heading">99.99k Tweets</p>
+        </div>
+        <div class="trending-box">
+          <p class="trending-heading">9 · Trending</p>
+          <p class="trending-text">#earthquake</p>
+          <p class="trending-heading">99.99k Tweets</p>
+        </div>
+      </div>
+
+      <div id="News" class="tabcontent">
+        <div class="news-main-img">
+          <h3>World news · LIVE</h3>
+          <p>The latest updates from Iran as protests continue across the country</p>
+        </div>
+        <p class="trending-heading">Trending In Politics</p>
+        <p class="trending-text">WWIII</p>
+        <p class="trending-heading">
+          Trending with <a href="#" class="twitter-links">#WW3</a>
+        </p>
+        </div>
+      
+
+        <div id="Sports" class="tabcontent">
+          <h3 style="margin: 1rem">Trends In India</h3>
+          <div class="sports-box">
+            <p class="sports-heading">1 · Sports</p>
+            <p class="sports-text">Ryan Giggs</p>
+            <p class="sports-heading">2,316 Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">2 · Sports</p>
+            <p class="sports-text">#IPLAuction</p>
+            <p class="sports-heading">19.3K Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">3 · Sports</p>
+            <p class="sports-text">#IPL2023</p>
+            <p class="sports-heading">14K Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">4 · Sports</p>
+            <p class="sports-text">Venezuela</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">5 · Sports</p>
+            <p class="sports-text">#CristianoRonaldo</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">6 · Sports</p>
+            <p class="sports-text">Portugal</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">7 · Sports</p>
+            <p class="sports-text">Asamoah Gyan</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">8 · Sports</p>
+            <p class="sports-text">#earthquake</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+          <div class="sports-box">
+            <p class="sports-heading">9 · Sports</p>
+            <p class="sports-text">#earthquake</p>
+            <p class="sports-heading">99.99k Tweets</p>
+          </div>
+        </div>
+
+        <div id="Entertainment" class="tabcontent">
+          <div class="tabs-main-img">
+            <h3>Entertainment · LIVE</h3>
+            <p>The latest from Season 16 of Bigg Boss</p>
+          </div>
+          <p class="trending-heading">Trending in Music</p>
+          <p class="trending-text">AND NOTHING FOR KPOP</p>
+          <p class="trending-heading">
+            6,453 Tweets <a href="#" class="twitter-links"></a>
+          </p>
+        </div>
+    </div>
+      <script>
+        function switchTabs(event, tabName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(
+              " active",
+              ""
+            );
+          }
+          document.getElementById(tabName).style.display = "block";
+          event.currentTarget.className += " active";
+        }
+      </script>
+      <script>
+        document.getElementById("defaultOpen").click();
+      </script>
+    </div>
+
+    <!-- Right Sidebar -->
+    <div class="right-sidebar">
+      <div class="signup-container">
+        <h3>New to Twitter?</h3>
+        <p>Sign up now to get your own personalized timeline!</p>
+        <div class="signup-btn">
+            <img src="assets/google.png" class="signup-btn-icon">
+            <p>Signup with Google</p>
+        </div>
+        <div class="signup-btn">
+          <img src="assets/apple.png" class="signup-btn-icon">
+          <p>Signup with Apple</p>
+        </div>
+        <div class="signup-btn">
+          <p>Signup with phone or Email</p>
+        </div>
+        <p>By signing up, you agree to the 
+          <a href="#" class="twitter-links">Terms of Service</a> and 
+          <a href="#" class="twitter-links">Privacy Policy</a>, including 
+          <a href="#" class="twitter-links">Cookie Use.</a></p>
+      </div>
+      <div class="right-links">
+        <p>Terms of Service</p>
+        <p>Cookie Policy</p>
+        <p>Privacy Policy</p>
+      </div>
+      <div class="right-links">
+        <p>Accessibility</p>
+        <p>Ads Info</p>
+        <!-- More... Dropdown -->
+        <div class="dropdown">
+          <p class="more-p-tag" onclick="dropDownFunction()">More...</p>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">About</a>
+            <a href="#">Status</a>
+            <a href="#">Twitter for Business</a>
+            <a href="#">Developers</a>
+          </div>
+        </div>
+      </div>
+      <div class="right-links">
+        <p>© 2022 Twitter, Inc.</p>
+      </div>
+    </div>
+    <!-- Bottom SigUp Tab -->
+  
+
+  <!--MOre... Script  -->
+    <script>
+      function dropDownFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.more-p-tag')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
+    <script>
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
+  </body>
+</html>    
